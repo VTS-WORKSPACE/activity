@@ -769,7 +769,7 @@ class APIv2ControllerTest extends TestCase {
 			'fileId' => $fileId,
 			'view' => 'files',
 			'filename' => basename($path),
-		], self::invokePrivate($controller, 'getPreview', [$author, $fileId, $path]));
+		], self::invokePrivate($controller, 'getPreviewByFileId', [$author, $fileId, $path]));
 	}
 
 	public function dataGetPreviewFromPath(): array {
