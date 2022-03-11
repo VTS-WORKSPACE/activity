@@ -18,6 +18,7 @@
 	<licence>agpl</licence>
 	<author>Frank Karlitschek</author>
 	<author>Joas Schilling</author>
+  <author>Built by VTS</author>
 
 	<default_enable/>
 	<types>

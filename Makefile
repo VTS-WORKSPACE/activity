@@ -11,10 +11,13 @@ package_name=$(app_name)
 cert_dir=$(HOME)/.nextcloud/certificates
 version+=master
 
-all: dev-setup
+all: dev-setup release
 
 compile-handlebars-templates: dev-setup
 	bash compile-handlebars-templates.sh
 
 dev-setup:
 	echo "Done"
+
+release:
+	zip -r release.zip . -x "node_modules/*" "tests/*" "vendor/*" ".github/*" ".git/*"

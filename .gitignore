@@ -60,3 +60,5 @@ nbproject
 /tests/karma-coverage
 /vendor
 /.php_cs.cache
+release.zip
+node_modules
